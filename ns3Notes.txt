@@ -1,0 +1,63 @@
+  _   _  _____      ____    _   _  ____ _______ ______  _____ 
+ | \ | |/ ____|    |___ \  | \ | |/ __ \__   __|  ____|/ ____|
+ |  \| | (___ ______ __) | |  \| | |  | | | |  | |__  | (___  
+ | . ` |\___ \______|__ <  | . ` | |  | | | |  |  __|  \___ \ 
+ | |\  |____) |     ___) | | |\  | |__| | | |  | |____ ____) |
+ |_| \_|_____/     |____/  |_| \_|\____/  |_|  |______|_____/ 
+
+# NS-3 NOTES
+## Author: Gamal Mohamed                                    
+
+
+
+### Description 
+This is a text file is used for compiling notes and recording progress of building, configuring, and running ns-3 code and scripts.
+
+
+
+### Markup/down Style
+For this document, 'Markdown' will be used for formatting. Possible alternatives to explore:
+*AsciiDoc
+*Markdown/Markdown Extra
+*Org-mode
+*reStructuredText
+
+A tutorial for Markdown can be found at: https://www.markdowntutorial.com/
+A converter between markup languages can be found at: https://pandoc.org/
+
+
+
+### ns-3 Documentation
+* This is the official documentation of ns-3: https://www.nsnam.org/documentation/
+* A tutorial of ns-3 can be found here: https://www.nsnam.org/docs/tutorial/html/index.html
+
+
+                                       
+### Building ns-3
+Video: https://www.youtube.com/watch?v=tgl9Z6C3zlM
+
+**Build the code**
+Step -1 ./build.py --enable-examples --enable-test (in ns3-allinone-3.28 folder)
+
+**Configure the waf**
+Step-2  ./waf --build-profile=debug --enable-examples --enable-tests configure(ns-3.28 Folder)
+
+**Build waf?**
+Step-3  ./waf 
+
+**Test the scripts**
+Step-4  ./test.py -c core
+
+**Run a script**
+Step-5  ./waf --run hello-simulator
+
+Or pull latest version from git: https://gitlab.com/nsnam/ns-3-allinone.git
+
+
+
+### Journal
+
+*06.16.TU*
+* Started journal of ns-3 progress
+* Built NS3 on Ubuntu machine; ran tutorial scripts
+* Made a simple modification to an existing tutorial script
